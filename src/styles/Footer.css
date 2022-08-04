@@ -1,0 +1,30 @@
+footer{
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: aliceblue;
+    background: rgb(36,35,0);
+    background: linear-gradient(90deg, rgba(36,35,0,0.01724439775910369) 0%, rgba(252,246,34,1) 0%, rgba(242,222,140,0.989233193277311) 100%);
+    font-size: 25px;
+    color: black;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__uploadlink,
+.footer__github > a{
+    width: 50%;
+    color: black;
+    text-decoration: none;
+}
+.footer__uploadlink:hover,
+.footer__github:hover,
+.footer__upload:hover{
+    color: black;
+    background-color: rgba(182, 176, 10, 0.473);;
+}
+.footer__icons{
+    margin-left: 10px;
+}

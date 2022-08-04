@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background: rgb(36,35,0);
+    background: linear-gradient(90deg, rgba(36,35,0,0.01724439775910369) 0%, rgba(252,246,34,1) 0%, rgba(242,222,140,0.989233193277311) 100%);
+}
+.app{
+    margin-bottom: 50px;
+}
+.app__space{
+    height:  150px;
+}

@@ -1,0 +1,35 @@
+.upload{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+.upload > label{
+    font-size: 28px;
+    margin-top: 30px;
+}
+.upload > p {
+    font-size: 20px;
+}
+.upload__name{
+    outline: none;
+    font-size: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.upload__button{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(36,35,0);
+}
+.upload__checkbox{
+    margin-left: 10px;
+}
+.upload__button:hover{
+    background: rgb(36,35,0);
+    background: linear-gradient(90deg, rgba(36,35,0,0.01724439775910369) 0%, rgba(252,246,34,1) 0%, rgba(242,222,140,0.989233193277311) 100%);
+}

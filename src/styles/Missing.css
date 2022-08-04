@@ -1,0 +1,14 @@
+.missing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.missing__button{
+    font-size: 20px;
+}
+
+.missing__button:hover{
+    color: black;
+}
