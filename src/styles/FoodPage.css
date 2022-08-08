@@ -1,0 +1,113 @@
+.foodpage{
+    display: flex;
+}
+
+.darkbg{
+    opacity: 0.1;
+}
+.foodpage__card{
+    flex: 0.5;
+}
+.foodpage__title__toppings,
+.foodpage__title{
+    font-size: 50px;
+    margin-left: 15px;
+}
+.foodpage__image{
+    width: 50%;
+    margin-left: 15px;
+}
+.foodpage__selectedtoppings{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.foodpage__selectedtoppingDiv{
+    display: flex;
+    align-items: center;
+}
+.foodpage__selectedtopping{
+    margin-left: 20px;
+    font-size: 28px;
+}
+.foodpage__deletebutton{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.foodpage__toppings{
+    flex: 0.5;
+}
+.foodpage__toppings::before{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    content: "";
+    background-color: rgb(192, 188, 64);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.foodpage__topping{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foodpage__toppingname{
+    margin: 0px 0px 0px 20px;
+}
+.foodpage__toppingplus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgb(36,35,0);;
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+}
+
+
+.foodpage__order{
+    margin: 50px 0px 50px 25px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(36,35,0);
+}
+.foodpage__toppingplus:hover,
+.foodpage__order:hover{
+    background: rgb(36,35,0);
+    background: linear-gradient(90deg, rgba(36,35,0,0.01724439775910369) 0%, rgba(252,246,34,1) 0%, rgba(242,222,140,0.989233193277311) 100%);
+}
+
+.foodpage__modal{
+    background-color: aliceblue;
+    position: absolute;
+    top: 150px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90vw;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .foodpage{
+        display: block;
+    }
+    .foodpage__title__toppings,
+    .foodpage__title{
+        font-size: 40px;
+    }
+    .foodpage__title__toppings{
+        margin-top: 30px;
+    }
+    .foodpage__toppings::before{
+        display: none;
+    }
+    
+}

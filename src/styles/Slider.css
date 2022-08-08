@@ -1,8 +1,14 @@
+.slider__card{
+    display: flex;
+    justify-content: center;
+}
 .slider__image{
-    height: 400px;
+    max-height: 400px;
     object-fit: contain;
     border-radius: 10px;
+    border: 1px solid rgba(90, 87, 2, 0.548);
 }
+
 
 @media screen and (max-width:424px) {
     .slider{
@@ -10,6 +16,7 @@
         top: 0;
     }
     .slider__image{
-        height: 200px;
+        height: 100%;
+        width: 100%;
     }
 }

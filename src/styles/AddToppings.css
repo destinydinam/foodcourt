@@ -1,0 +1,35 @@
+.addToppings{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.addToppings__input{
+    outline: none;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.addToppings__addButton{
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(36,35,0);
+    margin-top: 16px;
+    min-height: 37px;
+    min-width: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.addToppings__addButton:hover{
+    background: rgb(36,35,0);
+    background: linear-gradient(90deg, rgba(36,35,0,0.01724439775910369) 0%, rgba(252,246,34,1) 0%, rgba(242,222,140,0.989233193277311) 100%);
+
+}
+
+
+
+
+
+

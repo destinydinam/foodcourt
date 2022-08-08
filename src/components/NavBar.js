@@ -1,6 +1,5 @@
 import '../styles/NavBar.css';
-import Logo from '../assets/foodgallery.png';
-import { Link } from 'react-router-dom';
+import Logo from '../assets/foodcourt.png';
 import { useContext, useEffect } from 'react';
 import DataContext from '../context/DataContext';
 
@@ -14,15 +13,18 @@ const NavBar = () => {
     handleSearchNavigate();
   }, [navigate, search.length]);
 
+  const handleHomePage = () => {
+    setSearch('');
+    navigate('/');
+  };
+
   return (
     <nav className="navbar fixed-top navBar">
       <div className="container-fluid">
-        <Link className="navBar__homelink" to="/">
-          <div className="navBar__logo">
-            <img src={Logo} alt="" width="60" height="55" />
-            <p>FoodGallary</p>
-          </div>
-        </Link>
+        <div className="navBar__logo" onClick={handleHomePage}>
+          <img src={Logo} alt="" width="60" height="55" />
+          <p>FoodCourt</p>
+        </div>
         <form className="d-flex m-3 navBar__form" role="search" type="submit">
           <input
             className="form-control me-2"

@@ -1,5 +1,5 @@
 import '../styles/Slider.css';
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import DataContext from '../context/DataContext';
 
@@ -11,7 +11,6 @@ const Slider = () => {
     setIndex(selectedIndex);
   };
   const isFalse = false;
-
   return (
     <div className="slider">
       <Carousel
@@ -21,11 +20,13 @@ const Slider = () => {
       >
         {allDishes.map((food) => (
           <Carousel.Item key={food.id}>
-            <img
-              className="d-block w-100 slider__image "
-              src={food.image}
-              alt="First slide"
-            />
+            <div className="slider__card">
+              <img
+                className="d-block slider__image"
+                src={food.image}
+                alt="First slide"
+              />
+            </div>
           </Carousel.Item>
         ))}
       </Carousel>

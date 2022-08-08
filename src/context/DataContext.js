@@ -16,6 +16,7 @@ export const DataProvider = ({ children }) => {
   const continentalImageListRef = ref(storage, 'images/continental/');
   const [search, setSearch] = useState('');
   const navigate = useNavigate();
+  const [toppingInputList, setToppingInputList] = useState([]);
 
   useEffect(() => {
     if (effectRun.current === false) {
@@ -76,6 +77,8 @@ export const DataProvider = ({ children }) => {
         setSearch,
         navigate,
         envPassword,
+        toppingInputList,
+        setToppingInputList,
       }}
     >
       {children}

@@ -4,11 +4,11 @@ import { useContext } from 'react';
 import DataContext from '../context/DataContext';
 
 const Footer = () => {
-  const { navigate, envPassword } = useContext(DataContext);
+  const { navigate, setSearch } = useContext(DataContext);
 
   const handleNavigate = () => {
-    const password = prompt('Enter password to access upload page: ');
-    password === envPassword ? navigate('/upload') : navigate('/');
+    setSearch('');
+    navigate('/upload');
   };
 
   return (

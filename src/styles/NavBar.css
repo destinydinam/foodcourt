@@ -4,16 +4,15 @@
     background: rgb(36,35,0);
     background: linear-gradient(90deg, rgba(36,35,0,0.01724439775910369) 0%, rgba(252,246,34,1) 0%, rgba(242,222,140,0.989233193277311) 100%);
 }
-.navBar__homelink{
-    text-decoration: none;
-    color: black;
-}
-.navBar__homelink:hover{
-    color: rgb(59, 58, 58);
-}
 .navBar__logo{
     display: flex;
     align-items: center;
+}
+.navBar__logo:hover{
+    cursor: pointer;
+}
+.navBar__logo>img{
+    border-radius: 10px;
 }
 .navBar__logo>p{
     margin-left: 5px;

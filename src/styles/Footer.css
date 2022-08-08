@@ -8,6 +8,7 @@ footer{
     background: linear-gradient(90deg, rgba(36,35,0,0.01724439775910369) 0%, rgba(252,246,34,1) 0%, rgba(242,222,140,0.989233193277311) 100%);
     font-size: 25px;
     color: black;
+    cursor: pointer;
 }
 .footer__container{
     display: flex;
